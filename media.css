@@ -139,6 +139,9 @@
         padding: 0;
         margin-bottom:20px;
     }
+    .footer-socials{
+        margin-top:10px;
+    }
 }
 
 /* 4. ANIMATION REPAIR (Hamburger Icon) */
@@ -432,4 +435,5 @@
     }
 
 }
+
 
