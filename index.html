@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Chougule - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">  <span class="code-symbol">&lt;/&gt;</span> Vedant Chougule</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Vedant Chougule</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile" class="reveal">
+        <div class="section_pic-container">
+            <img src="./images/cropped_circle_image_PhotoGrid.png" alt="Vedant Chougule profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p">Hello, I'm</p>
+            <h1 class="title">VEDANT CHOUGULE</h1>
+            <p class="section_text_p2">Java Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./images/Resume_VedantDayanandChougule.pdf')">Download Resume</button>
+                <button class="btn btn-color-3" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./images/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href = 'https://www.linkedin.com/in/vedant-chougule-7b3bbb302/'">
+                <img src="./images/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Veds46'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="reveal">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title1">About Me</h1>
+        <div class="about-container-wrapper">
+            <div class="about-containers-grid">
+                <div class="details-container">
+                    <img src="./images/experience.png" alt="Experience icon" class="icon">
+                    <h2 class="details-title">Experience & Internship</h2>
+                    <div class="detail-content">
+                       <li style="margin-bottom: 1rem;padding: 4px;margin-left: 20px;">
+            <strong>Full Stack Java Development</strong> – Domain Computer Education
+            <p style="font-size: 0.9rem; margin-top: 0.2rem;">• Completed a 1-month intensive internship , I work on React Js, Node Js & Spring Boot.</p>
+        </li>
+        <li style="margin-bottom: 1rem;padding: 4px;margin-left: 20px;">
+            <strong>Web Development</strong> – Cognifyz Technologies
+            <p style="font-size: 0.9rem; margin-top: 0.2rem;">• Gained hands-on experience in 1 month building responsive web interfaces.In that I use Html, Css ,JavaScript .</p>
+        </li>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <img src="./images/education.png" alt="Education icon" class="icon">
+                    <h2 class="details-title">Education</h2>
+                    <div class="detail-content education-list">
+                        <div class="education-details">
+                            <h3 class="Dr">Dr. J. J. Magdum College Of Engineering, Jaysingpur</h3>
+                            <p>B.Tech in Information Technology - 7.80/10 (pursuing)</p>
+                        </div>
+                        <div class="education-details">
+                            <h3>Dr. Bapuji Salunkhe College, Miraj</h3>
+                            <p>Higher Secondary Certificate (XII) - 63.33%</p>
+                        </div>
+                        <div class="education-details">
+                            <h3>Vidya Mandir Prashala, Miraj</h3>
+                            <p>Secondary School Certificate (X) - 84.80%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-summary-text">
+                <p class="about-text">
+                    I am an aspiring Software Engineer with a strong foundation in Java and Spring Boot, experienced in developing REST APIs.
+                    I am passionate about utilizing opportunities for professional growth and using my skills for the success of an organization.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="reveal">
+        <p class="section_text_p1">What I Can Do</p>
+        <h1 class="title1">Skills</h1>
+        <div class="skills-container-grid">
+            <div class="skills-category">
+                <h2 class="category-title">Languages & Core</h2>
+                <ul class="skills-list-detail">
+                    <li><span class="skill-tag">Java</span></li>
+                    <li><span class="skill-tag">OOP</span></li>
+                    <li><span class="skill-tag">HTML</span></li>
+                    <li><span class="skill-tag">CSS</span></li>
+                    <li><span class="skill-tag">JavaScript</span></li>
+                    <li><span class="skill-tag">MySql</span></li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h2 class="category-title">Frameworks & Tools</h2>
+                <ul class="skills-list-detail">
+                    <li><span class="skill-tag">Spring Boot</span></li>
+                    <li><span class="skill-tag">REST APIs</span></li>
+                    <li><span class="skill-tag">React Js</span></li>
+                    <li><span class="skill-tag">Postman</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="soft-skills-container">
+            <h2 class="category-title">Soft Skills</h2>
+             <ul class="skills-list-detail soft-skills-list">
+                <li><span class="skill-tag">Problem Solving</span></li>
+                <li><span class="skill-tag">Time Management</span></li>
+                <li><span class="skill-tag">Teamwork</span></li>
+                <li><span class="skill-tag">Adaptability</span></li>
+            </ul>
+        </div>
+    </section>
+  <section id="projects" class="reveal">
+    <p class="section_text_p1">My Recent Work</p>
+    <h1 class="title1">Projects</h1>
+    <div class="section-container">
+        
+        <div class="project-details">
+            <h3>Bank Management System</h3>
+            <p>A robust project developed using Java Swing, AWT, and MySql. It manages bank accounts, including creation, payments, and profile updates.</p>
+            <div class="project-btn-container">
+                <a href="https://www.linkedin.com/posts/vedant-chougule-7b3bbb302_project-java-mysql-activity-7255856928545718273-LPXP" target="_blank" class="combined-btn">
+                    <button class="btn btn-color-2">LinkedIn
+                         <img src="images/external-link-symbol.png" alt="external link" class="btn-icon">
+                    </button>
+                   
+                </a>
+            </div>
+        </div>
+
+        <div class="project-details">
+            <h3>Electricity Billing System</h3>
+            <p>A desktop-based application named POWERPAY built with Java OOP, Swing, and MySql. Manages customers, meter info, and bills.</p>
+            <div class="project-btn-container">
+                <a href="https://www.linkedin.com/posts/vedant-chougule-7b3bbb302_javadevelopment-javaswing-eclipseide-activity-7348288873019457536-EA1H" target="_blank" class="combined-btn">
+                    <button class="btn btn-color-2">LinkedIn
+                         <img src="images/external-link-symbol.png" alt="external link" class="btn-icon">
+                    </button>
+                   
+                </a>
+            </div>
+        </div>
+
+        <div class="project-details">
+            <h3>Student Management System</h3>
+            <p>A Full-Stack Student Management System developed using React for the front-end and a Node.js backend with MongoDB.</p>
+            <div class="project-btn-container">
+                <a href="https://www.linkedin.com/posts/vedant-chougule-7b3bbb302_fullstackdevelopment-webdevelopment-reactjs-activity-7412057745668988928-Umaf" target="_blank" class="combined-btn">
+                    <button class="btn btn-color-2">LinkedIn
+                        <img src="images/external-link-symbol.png" alt="external link" class="btn-icon">
+                    </button>
+                    
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="contact" class="reveal">
+        <p class="section_text_p1">Get In Touch</p>
+        <h1 class="title1">Contact Me</h1>
+        
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon" >
+                <p><a href="mailto:vedantchougule2005@gmail.com">vedantchougule2005@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/vedant-chougule-7b3bbb302/">Vedant Chougule</a></p>
+            </div>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/vedantchougule2005@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://portfolio-vedant-chougule.netlify.app/thank.html">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="I'd like to discuss a job opportunity..."></textarea>
+            </div>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </section>
+    <footer class="reveal">
+    <nav>
+        <div class="footer-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/vedant-chougule-7b3bbb302/" target="_blank">
+            <img src="./images/linkedin.png" alt="LinkedIn" class="icon footer-icon">
+        </a>
+        <a href="https://github.com/Veds46" target="_blank">
+            <img src="./images/github.png" alt="GitHub" class="icon footer-icon">
+        </a>
+    </div>
+    <p>Copyright &#169; <span id="display-year"></span> Vedant Chougule. All Rights Reserved.</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

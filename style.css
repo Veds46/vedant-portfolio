@@ -1,0 +1,1311 @@
+
+/* style.css - PROFESSIONAL AND MODERN STYLES (ORANGE THEME) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* RESET AND BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #fcfcfc;
+    background-image: 
+        linear-gradient(rgba(255, 127, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 127, 0, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+}
+
+/* FIX: ADD SCROLL-PADDING TO PREVENT STICKY NAV FROM COVERING SECTION HEADERS */
+html {
+    scroll-behavior: smooth;
+    /* Set padding equal to or slightly more than the nav height (12vh is approx 80px) */
+    scroll-padding-top: 100px; 
+}
+
+p {
+    color: rgb(85, 85, 85);
+    line-height: 1.6;
+}
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF7F00; /* ORANGE */
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: #FF7F00; /* ORANGE */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU (Desktop Hidden) */
+#hamburger-nav {
+    display: none;
+}
+
+/* SECTIONS */
+section {
+    padding: 10vh 0;
+    margin: 0 10rem;
+    min-height: fit-content;
+    text-align: center;
+}
+
+.section_text_p1 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.title, .title1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 2rem;
+}
+
+/* PROFILE SECTION */
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    min-height: 90vh;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_pic-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #FF7F00; /* ORANGE */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section_text {
+    text-align: center;
+    max-width: 500px;
+}
+
+.section_text_p2 {
+    margin-top: -30px;
+    font-size: 1.5rem;
+    color: #0f0404;
+    margin-bottom: 2rem;
+}
+
+/* BUTTONS */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    width: 10rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-color-1{
+    background: #121212;
+    color: white;
+    border: 1px solid #121212;
+}
+
+.btn-color-3 {
+    background: white;
+    color: #121212;
+    border: 1px solid #121212;
+}
+
+.btn-color-1:hover {
+    background: #FF7F00; /* ORANGE HOVER */
+    border-color: #FF7F00; /* ORANGE HOVER */
+}
+
+.btn-color-3:hover {
+    background-color: #434448;
+    color: white;
+}
+
+/* SOCIALS */
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.icon {
+    height: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+/* -------------------------------------- */
+/* ABOUT SECTION - REFINED PROFESSIONAL STYLES */
+/* -------------------------------------- */
+#about {
+    padding-top: 10vh;
+}
+
+.about-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-containers-grid {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.details-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.details-container .icon {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.details-title {
+    font-size: 1.4rem;
+    color: #FF7F00; /* ORANGE */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.detail-content {
+    text-align: left;
+}
+
+.experience-text {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.education-details {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+.education-details:last-child {
+    border-bottom: none;
+}
+.education-details h3 {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    color: #333;
+}
+.education-details p {
+    font-size: 0.9rem;
+}
+
+.profile-summary-text {
+    width: 100%;
+    padding: 1rem;
+    /* Optional: style the summary text block */
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    margin: 0;
+}
+
+/* -------------------------------------- */
+/* NEW SKILLS SECTION - ATTRACTIVE STYLES */
+/* -------------------------------------- */
+#skills {
+    padding-top: 10vh;
+}
+
+.skills-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for categories */
+    gap: 3rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+}
+
+.skills-category {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.skills-category:hover {
+    transform: translateY(-5px);
+    border-color: #FF7F00;
+}
+.soft-skills-container:hover{
+    transform: translateY(-5px);
+    border-color: #FF7F00;
+    transition: all 0.3s ease-in-out;
+}
+.category-title {
+    font-size: 1.5rem;
+    color: #121212;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #FF7F00;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.skills-list-detail {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: #FFF0E6; /* LIGHT ORANGE BACKGROUND */
+    color: #FF7F00;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #FF7F00;
+    display: inline-block;
+}
+
+.soft-skills-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+}
+
+.soft-skills-list {
+    margin-top: 1rem;
+}
+
+/* PROJECTS SECTION */
+#projects .section-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-details {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-details:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(17, 16, 16, 0.1);
+    border: 1px solid #000000;
+}
+
+
+.project-details h3 {
+    font-size: 1.5rem;
+    color: #121212;
+    margin-bottom: 0.5rem;
+}
+
+.project-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+}
+
+.project-btn-container .btn {
+    width: 8rem;
+}
+
+/* -------------------------------------- */
+/* CONTACT SECTION - FORM STYLES */
+/* -------------------------------------- */
+
+#contact {
+    min-height: fit-content;
+    padding-bottom: 10vh;
+}
+
+
+
+.contact-info-container a {
+    color: #FF7F00;
+}
+ 
+.contact-info-upper-container {
+    /* Enables Flexbox layout */
+    display: flex; 
+    /* Aligns containers horizontally */
+    justify-content: center; 
+    /* Centers items vertically within the container (optional, but good practice) */
+    align-items: center; 
+    /* Adds some space between the two contact-info-container divs */
+    gap: 3rem; 
+    /* Adds top and bottom margin for spacing on the page */
+    margin: 4rem auto;
+}
+
+.contact-info-container {
+    /* Ensures the content inside is also aligned */
+    display: flex;
+    /* Aligns the icon and the text horizontally */
+    align-items: center; 
+    /* Adds a small space between the icon and the text */
+    gap: 0.5rem;
+}
+
+/* Optional: Styling for the icons and text to ensure they look good */
+
+
+
+.contact-info-container p {
+    /* Resets any default margin for the paragraph element */
+    margin: 0;
+    /* Optional: Sets a font size */
+    font-size: 1rem; 
+}
+
+.contact-form {
+    background: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #121212;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #FF7F00;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 127, 0, 0.2);
+}
+
+.send-btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-color: #121212 !important;
+}
+
+.send-btn:hover {
+    background: #FF7F00;
+     
+}
+/* Initial state: Hidden and slightly moved down */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.1ms ease-in; /* Control the speed here (0.8s) */
+}
+
+/* Active state: Visible and in original position */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: Add a small delay to the grid cards so they pop up one after another */
+.details-container, .skills-category, .project-details {
+    transition-delay: 0.2s;
+}
+
+/* -------------------------------------- */
+/* FOOTER STYLES */
+/* -------------------------------------- */
+
+footer {
+    height: 25vh; /* Gives it enough height to feel "full" */
+    margin: 0 1rem;
+    padding: 2rem 0;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-icon {
+    height: 1.8rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+    /* This makes your black icons turn Orange on hover! */
+    filter: invert(53%) sepia(85%) saturate(1633%) hue-rotate(359deg) brightness(103%) contrast(106%);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 600px) {
+    footer {
+        height: auto;
+        padding: 3rem 0;
+    }
+    
+    footer .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/* Container to hold the button and icon together */
+/* Container for the link */
+/* The Link Container */
+/* Container to keep button size stable */
+.combined-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* The Button - Using your purple/blue theme */
+.btn-color-2 {
+    background-color: #2909de; /* Match the color in your image */
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 8px; /* Slightly rounded as per your screenshot */
+    padding: 8px 20px;
+    font-weight: 600;
+    display: flex;       
+    align-items: center; 
+    gap: 8px;            
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* FIXING THE WHITE BOX ISSUE */
+.btn-icon {
+    height: 25px; 
+    width: 25px;
+    display: inline-block;
+    object-fit: contain;
+
+}
+.btn-color-2:hover{
+    background-color: rgb(232, 116, 8);
+    text-decoration: none;
+}
+
+.send-btn{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Hover Effect */
+
+/* style.css - PROFESSIONAL AND MODERN STYLES (ORANGE THEME) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* RESET AND BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #fcfcfc;
+    background-image: 
+        linear-gradient(rgba(255, 127, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 127, 0, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+}
+
+/* FIX: ADD SCROLL-PADDING TO PREVENT STICKY NAV FROM COVERING SECTION HEADERS */
+html {
+    scroll-behavior: smooth;
+    /* Set padding equal to or slightly more than the nav height (12vh is approx 80px) */
+    scroll-padding-top: 100px; 
+}
+
+p {
+    color: rgb(85, 85, 85);
+    line-height: 1.6;
+}
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF7F00; /* ORANGE */
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: #FF7F00; /* ORANGE */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU (Desktop Hidden) */
+#hamburger-nav {
+    display: none;
+}
+
+/* SECTIONS */
+section {
+    padding: 10vh 0;
+    margin: 0 10rem;
+    min-height: fit-content;
+    text-align: center;
+}
+
+.section_text_p1 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.title, .title1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 2rem;
+}
+
+/* PROFILE SECTION */
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    min-height: 90vh;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_pic-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #FF7F00; /* ORANGE */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section_text {
+    text-align: center;
+    max-width: 500px;
+}
+
+.section_text_p2 {
+    margin-top: -30px;
+    font-size: 1.5rem;
+    color: #0f0404;
+    margin-bottom: 2rem;
+}
+
+/* BUTTONS */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    width: 10rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-color-1{
+    background: #121212;
+    color: white;
+    border: 1px solid #121212;
+}
+
+.btn-color-3 {
+    background: white;
+    color: #121212;
+    border: 1px solid #121212;
+}
+
+.btn-color-1:hover {
+    background: #FF7F00; /* ORANGE HOVER */
+    border-color: #FF7F00; /* ORANGE HOVER */
+}
+
+.btn-color-3:hover {
+    background-color: #434448;
+    color: white;
+}
+
+/* SOCIALS */
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.icon {
+    height: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+/* -------------------------------------- */
+/* ABOUT SECTION - REFINED PROFESSIONAL STYLES */
+/* -------------------------------------- */
+#about {
+    padding-top: 10vh;
+}
+
+.about-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-containers-grid {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.details-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.details-container .icon {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.details-title {
+    font-size: 1.4rem;
+    color: #FF7F00; /* ORANGE */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.detail-content {
+    text-align: left;
+}
+
+.experience-text {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.education-details {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+.education-details:last-child {
+    border-bottom: none;
+}
+.education-details h3 {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    color: #333;
+}
+.education-details p {
+    font-size: 0.9rem;
+}
+
+.profile-summary-text {
+    width: 100%;
+    padding: 1rem;
+    /* Optional: style the summary text block */
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    margin: 0;
+}
+
+/* -------------------------------------- */
+/* NEW SKILLS SECTION - ATTRACTIVE STYLES */
+/* -------------------------------------- */
+#skills {
+    padding-top: 10vh;
+}
+
+.skills-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for categories */
+    gap: 3rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+}
+
+.skills-category {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.skills-category:hover {
+    transform: translateY(-5px);
+    border-color: #FF7F00;
+}
+.soft-skills-container:hover{
+    transform: translateY(-5px);
+    border-color: #FF7F00;
+    transition: all 0.3s ease-in-out;
+}
+.category-title {
+    font-size: 1.5rem;
+    color: #121212;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #FF7F00;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.skills-list-detail {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: #FFF0E6; /* LIGHT ORANGE BACKGROUND */
+    color: #FF7F00;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #FF7F00;
+    display: inline-block;
+}
+
+.soft-skills-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+}
+
+.soft-skills-list {
+    margin-top: 1rem;
+}
+
+/* PROJECTS SECTION */
+#projects .section-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-details {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-details:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(17, 16, 16, 0.1);
+    border: 1px solid #000000;
+}
+
+
+.project-details h3 {
+    font-size: 1.5rem;
+    color: #121212;
+    margin-bottom: 0.5rem;
+}
+
+.project-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+}
+
+.project-btn-container .btn {
+    width: 8rem;
+}
+
+/* -------------------------------------- */
+/* CONTACT SECTION - FORM STYLES */
+/* -------------------------------------- */
+
+#contact {
+    min-height: fit-content;
+    padding-bottom: 10vh;
+}
+
+
+
+.contact-info-container a {
+    color: #FF7F00;
+}
+ 
+.contact-info-upper-container {
+    /* Enables Flexbox layout */
+    display: flex; 
+    /* Aligns containers horizontally */
+    justify-content: center; 
+    /* Centers items vertically within the container (optional, but good practice) */
+    align-items: center; 
+    /* Adds some space between the two contact-info-container divs */
+    gap: 3rem; 
+    /* Adds top and bottom margin for spacing on the page */
+    margin: 4rem auto;
+}
+
+.contact-info-container {
+    /* Ensures the content inside is also aligned */
+    display: flex;
+    /* Aligns the icon and the text horizontally */
+    align-items: center; 
+    /* Adds a small space between the icon and the text */
+    gap: 0.5rem;
+}
+
+/* Optional: Styling for the icons and text to ensure they look good */
+
+
+
+.contact-info-container p {
+    /* Resets any default margin for the paragraph element */
+    margin: 0;
+    /* Optional: Sets a font size */
+    font-size: 1rem; 
+}
+
+.contact-form {
+    background: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #121212;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #FF7F00;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 127, 0, 0.2);
+}
+
+.send-btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-color: #121212 !important;
+}
+
+.send-btn:hover {
+    background: #FF7F00;
+     
+}
+/* Initial state: Hidden and slightly moved down */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    /* 800ms gives a smooth "coming up" feel */
+    transition: opacity 800ms ease-out, transform 800ms ease-out;
+    will-change: opacity, transform; /* Optimization for smoother movement */
+}
+
+/* 2. Active State: Visible and in place */
+.reveal.active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+/* Optional: Add a small delay to the grid cards so they pop up one after another */
+.details-container, .skills-category, .project-details {
+    transition-delay: 0.2s;
+}
+
+/* -------------------------------------- */
+/* FOOTER STYLES */
+/* -------------------------------------- */
+
+footer {
+    height: 25vh; /* Gives it enough height to feel "full" */
+    margin: 0 1rem;
+    padding: 2rem 0;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-icon {
+    height: 1.8rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+    /* This makes your black icons turn Orange on hover! */
+    filter: invert(53%) sepia(85%) saturate(1633%) hue-rotate(359deg) brightness(103%) contrast(106%);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 600px) {
+    footer {
+        height: auto;
+        padding: 3rem 0;
+    }
+    
+    footer .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/* Container to hold the button and icon together */
+/* Container for the link */
+/* The Link Container */
+/* Container to keep button size stable */
+.combined-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* The Button - Using your purple/blue theme */
+.btn-color-2 {
+    background-color: #0646e9; /* Match the color in your image */
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 8px; /* Slightly rounded as per your screenshot */
+    padding: 8px 20px;
+    font-weight: 600;
+    display: flex;       
+    align-items: center; 
+    gap: 8px;            
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* FIXING THE WHITE BOX ISSUE */
+.btn-icon {
+    height: 25px; 
+    width: 25px;
+    display: inline-block;
+    object-fit: contain;
+
+}
+.btn-color-2:hover{
+    background-color: rgb(232, 116, 8);
+    text-decoration: none;
+}
+.btn-color-2{
+    color: white;
+}
+
+.send-btn{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Hover Effect */
+.code-symbol {
+    color: #FF7F00; /* Your theme orange */
+    font-family: 'Courier New', Courier, monospace; /* Monospace for code look */
+    margin-right: 15px; /* Space between symbol and text */
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
